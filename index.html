@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="animacion.js"></script>
+    <title>Taller 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row superior">
+            <div class="col-mb-4">
+                <div class="card">
+                    <img src="https://www.ofrases.com/imagenes/anonimo.jpg"
+                        style="max-width:100%;width:400px;height:300px;" class="card-img-top">
+                </div>
+            </div>
+            <div id="datos" class="col text-dark">
+                <div class="card-body">
+                    <h1>Miguel Ortiz</h1>
+                    <h5>m.ortiz09@ufromail.cl</h5>
+                    <h5>Temuco. Chile</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-4 mb-4 inferior">
+            <div class="col-6 izq">
+                <div id="enviar">
+                </div>
+            </div>
+            <div class="col der">
+                <form>
+                    <div class="form-group">
+                        <label for="nombreInput">Nombre</label>
+                        <input onchange="validarNombre()" type="text" class="form-control" id="nombreInput"
+                            placeholder="Escriba su nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="MensajeInput">Mensaje (Max. 100 palabras)</label>
+                        <textarea class="form-control" id="MensajeInput" rows="3"
+                            placeholder="Escriba su mensaje"></textarea>
+                    </div>
+                
+                </form>
+                <button onclick="agregarMensaje()" class="btn btn-primary">Enviar</button>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
